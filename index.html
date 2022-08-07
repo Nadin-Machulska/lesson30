@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <!--визначити вік користувача-->
+    <div class="age-of-user">
+        <label for="age">Вкажи свій вік</label>
+        <input type="date" name="age" class="age">
+        <button class="calculate">calculate</button>
+        <div class="calc-result"></div>
+    </div>
+
+    <div class="special-symbols">
+        <label for="number">Впиши будь-яке число від 0 до 9</label>
+        <input type="number" name="number" class="input-number">
+        <button class="find-symbol">find</button>
+        <div class="show-symbol"></div>
+    </div>
+
+    <div class="commom-divisor">
+        <label for="first-number">Вкажи два будь-яких числа, щоб знайти найбільший спільний дільник</label><br>
+        <input type="number" name="first-number" class="first-number">
+        <input type="number" name="second-number" class="second-number">
+        <button class="find-divisor">find</button>
+        <div class="show-divisor"></div>
+    </div>
+
+    <div class="all-divisors">
+        <label for="first-number">Вкажи будь-яке число, щоб знайти усі його дільники</label>
+        <input type="number" name="any-number" class="any-number">
+        <button class="find-all-divisors">find</button>
+        <div class="show-all-divisors"></div>
+    </div>
+
+    <div class="palindroms">
+        <label for="f-d-number">Введіть п'яти-розрядне число, щоб дізнатись, чи є воно паліндромом</label><br>
+        <input type="number" name="f-d-number" class="f-d-number">
+        <button class="btn">result</button>
+        <div class="show-result"></div>
+    </div>
+
+    <div class="sale">
+        <p>Введіть сумму покупки, щоб дізнатись, якою буде знижка</p>
+        <label for="">сумма має бути від 200</label><br>
+        <input type="number" name="purchase-price" class="purchase-price">
+        <button class="button">result</button>
+        <div class="discond"></div>
+    </div>
+
+    <div class="sum">
+        <p>Введіть два числа, щоб порахувати сумму чисел у діапазоні</p>
+        <input type="number" class="random-number1">
+        <input type="number" class="random-number2">
+        <button class="calc-sum">calculate</button>
+        <div class="result-of-sum"></div>
+    </div>
+
+    <div class="table-statistick">
+        <p>Введіть 10 чисел від 0 до 100 (додатні, відємні, нуль)</p>
+       <input type="number" class="statistick-random-numbers">
+       <button id="send-to-column">send</button>
+       
+        <table>
+
+            <tr>
+                <td>Відємні числа</td>
+                <td id="negative-numbers"></td>
+                <td id="negative-sum"></td>
+            </tr>
+            <tr>
+                <td>Додатні числа</td>
+                <td id="positive-numbers"></td>
+                <td id="posit-sum"></td>
+            </tr>
+            <tr>
+                <td>Нулі</td>
+                <td id="nulls"></td>
+                <td id="nulls-sum"></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="multiplication-table">
+        
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
